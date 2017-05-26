@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>hoppe.space</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href=style.css>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 1000, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+      </script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="#about">
+        <picture>
+          <source media="(min-width: 1px) and (orientation: landscape)"
+          srcset="SplashPic-LL.png, SplashPic-L.png 2x,">
+          <source media="(min-width: 1px) and (orientation: portrait)"
+          srcset="SplashPic-PL.png, SplashPic-P.png 2x">
+          <img src="SplashPic-P.png" alt="SplashPic">
+        </picture>
+      </a>
+    </header>
+
+    <div id="about">
+      <p id="big">About Me<p>
+      <p id="p">I am an engineering student with a love for all things STEAM and
+        passion for aerospace. As a (soon to be) student at Embry-Riddle Aeronautical
+        University in Prescott, AZ I will be studying Mechanical Engineering with
+        a minor in aerospace.
+      </p>
+      <p id="p">
+        I have worked on numerus projects from FIRST robotics to custom quadcopters
+        to sending pie (apple specifically) into the stratosphere which you can
+        check out <a href="#projects">below</a>.
+      </p>
+      <p id="p">
+        It is my dream to work in the aerospace industry with a focus on Uninhabited
+        Aerial Vehicles which I believe have the capability to revolutionize the
+        world. I wish to open source this amazing technology making it more accessible
+        than ever before to give everyone an opportunity to participate in this
+        amazing technology.
+      </p>
+      <p id="p">
+        If you would like to know more about me my resume is viewable
+        <a href="Alexander W. Hoppe Resume.pdf"target="_blank">here</a> and if you
+        would like to discuss anything else my contact information can be found
+        <a href="#contact">below</a>.
+      </p>
+    </div>
+
+    <div id="projects">
+      <p id="big">Projects<p>
+      <p> link or pictures (or picture links O_O) to my projects go here </p>
+    </div>
+
+    <div id="contact">
+      <p id="big">Contact<p>
+      <p><b>Email: alex[at]hoppe.space</b></p>
+      <p>
+        <a href="https://github.com/iLikePieTM" target="_blank"><img id="icon" src="github.png"></a>
+        <a href="http://steamcommunity.com/id/ilikepietm" target="_blank"><img id="icon" src="steam.png"></a>
+      </p>
+      <img id="footerpic" src="footer.png" alt="pie">
+      <p id="small">© Alexander Wolfgang Hoppe 2017</p>
+      <p id="small">Crafted by Alexander Wolfgang Hoppe (I'm sure my html/css is
+        terrible, don't look too closesly ;)</p>
+    </div>
+
+  </body>
+</html>
