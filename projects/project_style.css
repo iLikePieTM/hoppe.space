@@ -37,7 +37,6 @@ p.subtitle {
 p.small {
   font-size: 10px;
 }
-
 p.p {
   text-indent: -15px;
   line-height: 2;
@@ -49,11 +48,19 @@ ul {
 }
 
 #gallery {
-  line-height: 0;
-  column-count: 2;
+  line-height: 0px;
+  column-count: 3;
   column-gap: 0px;
 }
+@media only screen and (max-width: 720px) {
+  #gallery {
+    line-height: 0px;
+    column-count: 2;
+    column-gap: 0px;
+  }
+}
 img.gp {
+  border: 2px solid white;
   width: 100%;
   height: auto;
 }
