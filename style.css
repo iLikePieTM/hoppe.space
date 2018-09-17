@@ -1,18 +1,38 @@
 html, body {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+  height: 90vh;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  display: table;
+  background-image: url("media/header-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#headerText {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
+
 a.p {
   color: #464646;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 a:active {
   color: #FFA35C;
 }
@@ -22,47 +42,52 @@ p.p {
   line-height: 2;
   padding-left: 15px;
 }
+
+p.header {
+  margin: 0;
+  font-size: 10vmin;
+  font-weight: bolder;
+  text-shadow: 1vmin 1vmin 2vmin #000000;
+}
+
 p.big {
   font-size: 36px;
   font-weight: lighter;
   text-align: left;
 }
+
 p.small {
   font-size: 10px;
 }
 
-img {
-  display: block;
-  margin: auto;
-  max-height: 90vh;
-  max-width: 95vw;
-  height: auto;
-  width: auto;
-}
 img.project {
   width: 300px;
   height: 200px;
 }
-#footerpic {
-  max-width: 50vw;
-  height: auto;
+
+img.footer {
+  padding-top: 2vh;
+  padding-bottom: 1vh;
   margin: auto;
 }
 
 div {
   padding-top: 1vh;
   padding-bottom: 10vh;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
+
 #about {
   background-color: #42B4AC;
 }
+
 #projects {
   background-color: #464646;
   color: white;
   text-align: center;
 }
+
 #contact {
   background-color: #6B56C3;
   text-align: center;
@@ -76,7 +101,16 @@ figure {
   height: 250px;
   background-color: white;
   display: inline-block;
+  box-shadow: 5px 5px 10px #111111;
+  -webkit-transition: width .5s, height .5s;
+  transition: width .5s, height .5s;
 }
+
+figure:hover {
+  width: 306px;
+  height: 255px;
+}
+
 figcaption {
   color: #464646;
   font-style: italic;
