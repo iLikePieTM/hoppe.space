@@ -20,6 +20,29 @@ header {
   text-align: center;
 }
 
+div {
+  padding-top: 1vh;
+  padding-bottom: 10vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+#about {
+  background-color: #42B4AC;
+}
+
+#projects {
+  background-color: #464646;
+  color: white;
+  text-align: center;
+}
+
+#contact {
+  background-color: #6B56C3;
+  text-align: center;
+  padding-bottom: 2.5vh;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -71,29 +94,6 @@ img.footer {
   margin: auto;
 }
 
-div {
-  padding-top: 1vh;
-  padding-bottom: 10vh;
-  padding-left: 15vw;
-  padding-right: 15vw;
-}
-
-#about {
-  background-color: #42B4AC;
-}
-
-#projects {
-  background-color: #464646;
-  color: white;
-  text-align: center;
-}
-
-#contact {
-  background-color: #6B56C3;
-  text-align: center;
-  padding-bottom: 2.5vh;
-}
-
 figure {
   margin: 12px;
   padding: 6px;
@@ -109,11 +109,4 @@ figure {
 figure:hover {
   width: 306px;
   height: 255px;
-}
-
-figcaption {
-  color: #464646;
-  font-style: italic;
-  text-align: center;
-  margin: 12px;
 }
