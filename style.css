@@ -100,8 +100,8 @@ figure {
   background-color: white;
   display: inline-block;
   box-shadow: 5px 5px 10px #111111;
-  transition: all .5s;
-  -webkit-transition: all .5s;
+  transition: all .25s;
+  -webkit-transition: all .25s;
 }
 
 figure:hover {
