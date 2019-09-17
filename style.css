@@ -8,7 +8,7 @@ header {
   height: 100%;
   width: 100%;
   display: table;
-  background-image: url("media/header-background.jpg");
+  background-image: url("media/header-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,17 +28,17 @@ div {
 }
 
 #about {
-  background-color: #42B4AC;
+  background-color: #72C6C1;
 }
 
 #projects {
-  background-color: #464646;
+  background-color: #747474;
   color: white;
   text-align: center;
 }
 
 #contact {
-  background-color: #6B56C3;
+  background-color: #9080D1;
   text-align: center;
   padding-bottom: 2.5vh;
 }
@@ -48,7 +48,7 @@ a {
   color: white;
 }
 
-a.pro {
+a.fig {
   color: #464646;
 }
 
@@ -56,8 +56,9 @@ a:hover {
   text-decoration: underline;
 }
 
-a:active {
-  color: #FFA35C;
+a.h1:hover {
+  text-decoration: none;
+  text-shadow: 1.5vmin 1.5vmin 3vmin #000000;
 }
 
 p {
@@ -67,7 +68,7 @@ p {
   padding-left: 15px;
 }
 
-p.pro {
+p.fig {
   text-indent: 0;
   line-height: 1;
   padding: 0;
@@ -77,8 +78,8 @@ p.pro {
 h1 {
   margin: 0;
   font-size: 5em;
-  font-weight: bolder;
-  text-shadow: 1vmin 1vmin 2vmin #000000;
+  font-weight: normal;
+  text-shadow: 1.75vmin 1.75vmin 3.5vmin #000000;
 }
 
 h2 {
