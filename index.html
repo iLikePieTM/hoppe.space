@@ -1,142 +1,238 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
   <meta charset="UTF-8">
   <title>Alexander Wolfgang Hoppe</title>
-  <meta name="description" content="I am a Mechanical Engineering student with a
-  love for all things STEAM who is looking for an internship.">
+  <meta name="description" content="I am a driven mechanical / mechatronics engineer with a passion for undersea systems and multidisciplinary electro-mechanical design. I thrive on solving challenging engineering problems in diverse environments and am 
+    always eager to expand my skill set.">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href=style.css>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 750, function() {
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
-  </script>
-  
 </head>
 
 <body>
 
   <header>
-    <header id="headerText">
-      <div>
-        <h1><a class="h1" href="#about">Alexander Wolfgang Hoppe</a></h1>
-      </div>
-    </header>
+    <div class="headerText">
+      <h1><a class="h1" href="#about">Alexander Wolfgang Hoppe</a></h1>
+    </div>
   </header>
 
-  <div id="about">
+  <div class="about" id="about">
     <h2>About</h2>
     <p>
-      Hello! I'm Alex, a mechatronics engineer with a passion for robotics and 
-      multidisciplinary, electro-mechanical design based out of the San Francisco 
-      Bay area. I am a maker at heart and love using my skills and developing new 
-      ones to solve challenging engineering problems in diverse environments.
+      Hello! I’m Alex, a mechanical/mechatronics engineer based in the Seattle area with a passion for undersea systems
+      and multidisciplinary electro-mechanical design. At heart, I’m a maker who thrives on solving complex engineering
+      problems and is always eager to expand my skills in diverse environments.
     </p>
     <p>
-      I'm currently at a stealth startup where I utilize my multidisciplinary 
-      background to help drive the transition to clean energy through automation. 
-      I also have some extremely varied internship experiences; everything from 
-      using high altitude balloons to expand internet connectivity at Alphabet's 
-      Loon to developing micromanufacturing systems for pharmaceuticals at DEKA 
-      esearch and Development. I have further developed my skills through a 
-      variety of personal projects encompassing everything from a robotic barista 
-      to sending an apple pie into the stratosphere. If you're interested, I've 
-      put some of my projects <a href="#projects">below</a>.
+      My interest lies at the intersection of engineering and the ocean. Growing up along the West Coast of the United
+      States, the ocean has always been a significant part of my life. Professionally, I relish the challenge of
+      designing robust and intelligent systems capable of withstanding the harsh marine environment. My goal is to
+      contribute to sustainable technology solutions that address the pressing challenges facing our oceans and our
+      world.
     </p>
     <p>
-      Thanks for learning a bit about me! If you would like to know more about my 
-      experience, here is my <a href="media/resume.pdf" target="_blank"> resume</a>,
-      and if you’d like to get in touch, my contact information is 
+      Currently, I’m at Penn State University, where I am uniquely positioned at the crossroads of laboratory research
+      and field application. As a Research and Development Engineer, I collaborate with scientists in State College, PA,
+      to translate experiments and hypotheses into functional hardware. I then work closely with test operators to
+      deploy this hardware in the field, ensuring that all assets, sensors, and personnel are prepared for success. I
+      enjoy engaging in the full design process from initial concepts to fabrication and integration, to
+      conducting tests at sea.
+    </p>
+    <p>
+      One of my greatest strengths is my ability to quickly acquire new skills by linking research with past
+      experiences. My varied background includes roles such as working with Planted Solar, where I leveraged my
+      multidisciplinary expertise to advance clean energy through automation; developing high-altitude balloons for
+      internet connectivity at Alphabet’s Loon; and working on micromanufacturing systems for pharmaceuticals at DEKA.
+      My personal projects are equally diverse, ranging from robotic baristas to classic cars. If you're interested,
+      I've put some of my projects <a href="#projects">below</a>.
+    </p>
+    <p>
+      Thank you for taking the time to learn a bit about me! For details on my experience, please view my <a
+        href="media/resume.pdf" target="_blank">resume</a>, and feel free to get in touch using the contact information
       <a href="#contact">below</a>.
     </p>
   </div>
 
-  <div id="projects">
+  <div class="projects" id="projects">
+
     <h2>Projects</h2>
-    <p><i>(Click on a picture for more info)</i></p>
-    <figure>
-      <a class="fig" href="projects/nile.html">
+
+    <a class="fig" href="#nile">
+      <figure>
         <img src="media/nile_icon.jpg">
-        <p class ="fig">NILE Robotics</p>
-      </a>
-    </figure>
-    <figure>
-      <a class="fig" href="projects/caffebot.html">
+        <p class="fig">NILE</p>
+      </figure>
+    </a>
+    <a class="fig" href="#caffebot">
+      <figure>
         <img src="media/caffebot_icon.jpg">
-        <p class ="fig">CaffeBot</p>
-      </a>
-    </figure>
-    <figure>
-      <a class="fig" href="projects/smartonyx.html">
+        <p class="fig">CaffeBot</p>
+      </figure>
+    </a>
+    <a class="fig" href="#smartonyx">
+      <figure>
         <img src="media/smartonyx_icon.jpg">
-        <p class ="fig">Smart ONYX</p>
-      </a>
-    </figure>
-    <figure>
-      <a class="fig" href="projects/booper.html">
+        <p class="fig">Smart ONYX</p>
+      </figure>
+    </a>
+    <a class="fig" href="#boop">
+      <figure>
         <img src="media/boop_icon.jpg">
-        <p class ="fig">The Booper</p>
-      </a>
-    </figure>
-    <figure>
-      <a class="fig" href="projects/eaglesat.html">
+        <p class="fig">The Booper</p>
+      </figure>
+    </a>
+    <a class="fig" href="#eaglesat">
+      <figure>
         <img src="media/eaglesat_icon.jpg">
-        <p class ="fig">EagleSat II</p>
-      </a>
-    </figure>
-    <figure>
-      <a class="fig" href="projects/smartsignallight.html">
-        <img src="media/ssl_icon.jpg">
-        <p class ="fig">Smart Signal Light</p>
-      </a>
-    </figure>
-    <figure>
-      <a class="fig" href="projects/woodquad.html">
-        <img src="media/wq_icon.jpg">
-        <p class ="fig">Wood Quadcopter</p>
-     </a>
-    </figure>
-    <figure>
-      <a class="fig" href="projects/pieinspace.html">
-        <img src="media/pieinspace_icon.jpg">
-        <p class ="fig">Pie in Space</p>
-     </a>
-    </figure>
+        <p class="fig">EagleSat II</p>
+      </figure>
+    </a>
+
+    <p></p>
+    <h4><i>P.S. Tap for more info.</i></h4>
+
   </div>
 
-  <div id="contact">
+  <footer id="contact">
     <h2>Contact</h2>
-    
+
     <p>
       <a id="wl" href="mailto:alex@hoppe.space">Email</a>
-      <b>/</b>
+      /
       <a id="wl" target="_blank" href="https://www.linkedin.com/in/alexander-hoppe/">LinkedIn</a>
-      <b>/</b>
+      /
       <a id="wl" target="_blank" href="https://github.com/iLikePieTM">GitHub</a>
     </p>
 
     <img src="media/footer.png">
-    <h3>© 2023 Alexander Wolfgang Hoppe</h3>
-  <h3><a href="https://github.com/iLikePieTM/hoppe.space" target="_blank">Built by me!</a></h3>
-  </div>
+    <h4>© 2024 Alexander Wolfgang Hoppe</h3>
+      <h4><a href="https://github.com/iLikePieTM/hoppe.space" target="_blank">Built by me!</a></h3>
+
+  </footer>
+
+  <modal id="nile" aria-hidden="true">
+    <a class="overlay" href="#back"></a>
+    <div class="modal">
+      <a class="close" href="#back"> &times; </a>
+      <a href="media/nile.gif" target="_blank"><img src="media/nile.gif"></a>
+      <h3>NILE</h3>
+      <h4>Novel Irrigation and Land use Efficiency</h4>
+      <p>
+        Traditional agricultural methods often result in environmental harm due to inefficient watering and the
+        excessive
+        use of pesticides and fertilizers. To address this, my five teammates and I developed a cylindrical robotic
+        system
+        for our senior capstone project. Designed for backyard use but scalable to industrial farms, the system is
+        equipped with various sensors that dynamically respond to real-time plant and soil conditions.
+      </p>
+      <p>
+        To see our work in more detail and access technical documents, please visit the project <a
+          href="https://nile-erau.github.io/" target="_blank">website</a>!
+      </p>
+    </div>
+  </modal>
+
+  <modal id="caffebot" aria-hidden="true">
+    <a class="overlay" href="#back"></a>
+    <div class="modal">
+      <a class="close" href="#back"> &times; </a>
+      <a href="media/caffebot.gif" target="_blank"><img src="media/caffebot.gif"></a>
+      <h3>CaffeBot</h3>
+      <h4>A robotic "barista" designed for perfect pour over coffee.</h4>
+      <p>
+        This project was inspired by two seemingly unrelated events: I had recently learned to solve forward and inverse
+        kinematics for robotic systems, and my coffee maker was unreliable. The result was CaffeBot; a project aimed at
+        bringing high-quality pour-over coffee to even the busiest university students by automating the meticulous
+        process of pour over coffee.
+      </p>
+      <p>
+        CaffeBot was designed to mimic the precise flow control and pour patterns of a skilled barista using a two-joint
+        robotic arm on a revolute base. While I successfully solved the kinematics and developed a prototype, a
+        demanding
+        senior year schedule prevented me from fully assembling the final product.
+      </p>
+    </div>
+  </modal>
+
+  <modal id="smartonyx" aria-hidden="true">
+    <a class="overlay" href="#back"></a>
+    <div class="modal">
+      <a class="close" href="#back"> &times; </a>
+      <a href="media/smartonyx.jpg" target="_blank"><img src="media/smartonyx.jpg" width></a>
+      <h3>Smart ONYX</h3>
+      <h4>An Arduino based modification platform for the ONYX RCR electric motorbike.</h4>
+      <p>
+        In the spring of 2020, I took delivery of an ONYX RCR electric motorbike, which became my pride and joy.
+        Although
+        not a true motorcycle, it made my daily school commute much more enjoyable. However, the bike lacked essential
+        safety features like turn signals. To address this, I created Smart ONYX; a platform to transform my RCR into a
+        fully connected smart bike.
+      </p>
+      <p>
+        While I had to sell the bike when an internship took me across the country, I achieved my primary goal of safety
+        by implementing a complete set of turn and brake signals. Though the functions were relatively simple, this
+        project marked my first experience with real-time systems, where I gained valuable insights into building
+        responsive and reliable products.
+      </p>
+      <p>
+        Checkout the project <a href="https://github.com/iLikePieTM/Smart_ONYX" target="_blank">GitHub</a> page for more
+        info!
+      </p>
+    </div>
+  </modal>
+
+  <modal id="boop" aria-hidden="true">
+    <a class="overlay" href="#back"></a>
+    <div class="modal">
+      <a class="close" href="#back"> &times; </a>
+      <a href="media/boop.gif" target="_blank"><img src="media/boop.gif" width></a>
+      <h3>The Booper</h3>
+      <h4>Physical communication for a digital world.</h4>
+      <p>
+        The booper is a communication device was designed to offer a more physical connection than instant messaging,
+        inspired by my frequent travels and the desire to stay connected with my significant other over long distances.
+        Reminiscent of classic beepers, the device is intentionally simple, allowing users to send and receive a basic
+        message: either a "Boop" or a "Beep." In addition, a synced light enhances the experience, enabling shared
+        moments
+        or coded messages even when far apart.
+      </p>
+      <p>
+        The device is powered by a Particle Photon, an Arduino derivative designed for IoT projects, and features a
+        miniature OLED display and tactile, clicky buttons. Encased in an Altoids tin, it is both portable and durable.
+      </p>
+      <p>
+        Checkout the project <a href="https://github.com/iLikePieTM/Booper" target="_blank">GitHub</a> page for more
+        info!
+      </p>
+    </div>
+  </modal>
+
+  <modal id="eaglesat" aria-hidden="true">
+    <a class="overlay" href="#back"></a>
+    <div class="modal">
+      <a class="close" href="#back"> &times; </a>
+      <a href="media/eaglesat.jpg" target="_blank"><img src="media/eaglesat.jpg" width></a>
+      <h3>EagleSat</h3>
+      <p>
+        EagleSat was a student-led CubeSat project supported by the NASA Space Grant Program and Embry-Riddle. Our
+        mission, EagleSat 2, was a 3U CubeSat that was set to launch in 2021 as part of NASA's CubeSat Launch
+        Initiative.
+        The spacecraft carried dual scientific payloads: one to detect and track cosmic rays, and another to test the
+        effects of space radiation on computer memory.
+      </p>
+      <p>
+        As the Structures Team Lead, I was responsible for ensuring the spacecraft could withstand the rigors of launch
+        and the harsh environment of space. My team and I designed and built a custom 3U CubeSat structure that was both
+        lighter and more space-efficient than the commercially available options at the time.
+      </p>
+    </div>
+  </modal>
 
 </body>
 
